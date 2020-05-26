@@ -24,7 +24,7 @@ module.exports = {
         username: process.env.DB_USERNAME,
         password: process.env.DB_PASSWORD,
         url() {
-            return `mongodb://${this.username}:${this.password}@$cat-facts-ii0uq.mongodb.net/test`;
+            return `mongodb+srv://labas:labas@cat-facts-ii0uq.mongodb.net/test?retryWrites=true&w=majority`;
         }
     },
     generalAccessToken: process.env.GENERAL_ACCESS_TOKEN
